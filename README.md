@@ -24,7 +24,32 @@ The first phase will split into two main deliveries. The first delivers a comple
 
 Here’s the functionality in a little more detail:
 
-
+| Functional Area | Comment |
+| ----------- | ----------- |
+| User Management | Ability to create and manage users. Users can be assigned multiple roles. As the other Contemi systems are added to the Open Source community, the functionality already exists to manage access to them and facilitate Single Sign On (SSO) with 2FA if required. |
+| Back Office UI | The PMS is designed for back office use. Whilst APIs will exist for integration with other UIs (e.g. customer facing websites and apps). |
+| Customer Management | This is not the full CRM component which Contemi has and may form part of the long-term roadmap. It serves the needs of a PMS to manage a customer in the appropriate way for a given country. |
+| Customer Search | Ability to search by customer, quote or policy ID, as well as a more general but insurance specific search (e.g. risk object name). |
+| Basic product examples | Some sample products will be included, e.g. Travel Insurance. Additionally, support will be provided to take a product definition (currently in JSON) and generate the visualization and premium calculations. |
+| Sales (Quotes) | The user will be able select a partner/channel, then a product, run through a workflow of questions to create a quote with a premium. The quote can be later retrieved and accepted (purchased). |
+| Policy Management | Allows the management of a policy through its lifetime.  |
+| Payments | Handling of the payment schedule, with yearly to monthly schedules and different rounding and residuals options. |
+| Document Storage and Generation | Ability to generate documents such as quote and policy documents. And storing these in a central repository. The generation is based around composable document templates generating XHTML and conversation to PDF. Note: In release 1, the user will need to build or code in their own converter (else use commercially available software). Release 2 this issue will be resolved. |
+| Data Listener | Component to act as the conduit through which events, non-SQL data, etc. can be used for Data Warehousing activities |
+| Multi-lingual | Language can be dynamically changed on the website (assuming the translations have been uploaded into the system). |
+| Event History | The history of events – typically for auditing purposes. Any change to the data should cause and event to be created and stored. This is Insurance Platform wide. |
+| Configuration | For a given instalment (or longer-term tenant) – which features of the system are turned on off, branding for the different channels, products and specific rules of those products. |
 
 ![alt text](https://github.com/contemi/insurance-platform/blob/master/Archictecture.png "insurance platofrm arcitecure diagram")
 
+## License
+The exact license under which this software will be available is not yet finalized.
+
+## Contributions
+We will be looking for contributions. Anything from bug report (and bug fixes), to suggestions for new functionality.
+
+## Project Status
+In internal development – code is being re-shaped and packaged so it is ready for the Open Source community.
+
+## How to get more information
+Please email <OpenSource@contemi.com>
